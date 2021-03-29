@@ -4,7 +4,7 @@
   This Editor is recommended for Arabic
   community but anyone can use it...
 
-        <futures/>
+      <futures/>
 * adding the js console
 * adding a special place to past the libraries links
 * adding multiple themes
