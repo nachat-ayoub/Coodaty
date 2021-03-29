@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-ally="true"></script>
+    <title>coodaty</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><i class="fas fa-code"></i> cood<span>aty<strong>.</strong></span></div>
+            <div class="icons">
+                <span id="playBtn" class="icon"><i class="far fa-play-circle"></i> </span>
+                <span id="htmlBtn" class="icon"><i class="fab fa-html5"></i> </span>
+                <span id="cssBtn" class="icon"><i class="fab fa-css3-alt"></i> </span>
+                <span id="jsBtn" class="icon"><i class="fab fa-js"></i> </span>
+            </div>
+        </nav>
+        <div class="code-area">
+            
+            <div class="html-container">
+                <textarea oninput="showPreview()" id="htmlCode" placeholder="html..."></textarea>
+            </div>
+
+            <div class="css-container hide">
+                <textarea oninput="showPreview()" id="cssCode" placeholder="css..."></textarea>
+            </div>
+
+            <div class="js-container hide">
+                <textarea oninput="showPreview()" id="jsCode" placeholder="javascript"></textarea>
+            </div>
+        
+            <iframe class="preview-area hide" id="result"></iframe>
+            
+        </div> 
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
