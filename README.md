@@ -1,1 +1,1 @@
-# Codaty
+# Coodaty
