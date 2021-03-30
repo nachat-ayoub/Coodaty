@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-    <link href="./style.css" rel="stylesheet">
-    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-ally="true"></script>
-    <title>coodaty</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-ally="true"></script>
+  <title>coodaty</title>
 </head>
-<body>
-    <div class="container">
-        <nav>
-            <div class="logo"><i class="fas fa-code"></i> cood<span>aty<strong>.</strong></span></div>
-            <div class="icons">
-                <span id="playBtn" class="icon"><i class="far fa-play-circle"></i> </span>
-                <span id="htmlBtn" class="icon"><i class="fab fa-html5"></i> </span>
-                <span id="cssBtn" class="icon"><i class="fab fa-css3-alt"></i> </span>
-                <span id="jsBtn" class="icon"><i class="fab fa-js"></i> </span>
-            </div>
-        </nav>
-        <div class="code-area">
-            
-            <div class="html-container">
-                <textarea oninput="showPreview()" id="htmlCode" placeholder="html..."></textarea>
-            </div>
 
-            <div class="css-container hide">
-                <textarea oninput="showPreview()" id="cssCode" placeholder="css..."></textarea>
-            </div>
-
-            <div class="js-container hide">
-                <textarea oninput="showPreview()" id="jsCode" placeholder="javascript"></textarea>
-            </div>
-        
-            <iframe class="preview-area hide" id="result"></iframe>
-            
-        </div> 
+<body class="vh-100 vw-100">
+  <nav class="bg-dark text-light">
+    <div class="container d-flex justify-content-between fs-2 py-2">
+      <div class=""><i class="fas fa-code"></i> cood<span>aty<strong>.</strong></span></div>
+      <ul class="d-flex m-0">
+        <li id="playBtn" class="position-fixed top-50 end-0 m-4 rounded-circle bg-light text-dark"><i class="far fa-play-circle"></i> </span>
+        <li id="htmlBtn" class="ms-3"><i class="fab fa-html5"></i> </span>
+        <li id="cssBtn" class="ms-3"><i class="fab fa-css3-alt"></i> </span>
+        <li id="jsBtn" class="ms-3"><i class="fab fa-js"></i> </span>
+      </ul>
     </div>
-
-
-    <script src="app.js"></script>
+  </nav>
+  <hr class="m-0">
+  <div class="bg-dark h-100">
+    <div class="container h-100">
+      <div class="html-container h-100 rounded-0 form-floating">
+        <textarea class="w-100 h-100 bg-dark form-control rounded-0" id="htmlCode" placeholder="html..."></textarea>
+        <label class="text-white text-muted" for="htmlCode">html</label>
+      </div>
+      <div class="css-container h-100 hide form-floating">
+        <textarea class="w-100 h-100 bg-dark form-control rounded-0" id="cssCode" placeholder="css..."></textarea>
+        <label class="text-white text-muted" for="cssCode">css</label>
+      </div>
+      <div class="js-container h-100 hide form-floating">
+        <textarea class="w-100 h-100 bg-dark form-control rounded-0" id="jsCode" placeholder="javascript"></textarea>
+        <label class="text-white text-muted" for="jsCode">javascript</label>
+      </div>
+      <iframe class="preview-area hide" id="result"></iframe>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
+
 </html>
