@@ -120,7 +120,6 @@ playBTN.addEventListener('click', function() {
   </head>
   <body>
   ${htmlval}
-  <script src="./eruda.min.js"
   <script>
   ${js}
   </script>
