@@ -113,6 +113,7 @@ playBTN.addEventListener('click', function() {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+  body{color:white;}
   ${style}
   </style>
   <title>Document</title>
